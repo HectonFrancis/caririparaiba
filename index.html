@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cariri Paraibano</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+    body{background:#f5f7fa;color:#222;line-height:1.6}
+    header{
+      background:linear-gradient(135deg,#0f766e,#22c55e);
+      color:#fff;
+      padding:60px 20px;
+      text-align:center;
+    }
+    header h1{font-size:2.8rem;margin-bottom:10px}
+    header p{opacity:.95}
+
+    nav{
+      background:#111827;
+      padding:12px;
+      text-align:center;
+      position:sticky;
+      top:0;
+      z-index:100;
+    }
+    nav a{
+      color:#fff;
+      margin:0 15px;
+      text-decoration:none;
+      font-weight:500;
+    }
+    nav a:hover{color:#22c55e}
+
+    .container{max-width:1100px;margin:auto;padding:40px 20px}
+
+    .card{
+      background:#fff;
+      border-radius:16px;
+      padding:25px;
+      margin-bottom:25px;
+      box-shadow:0 10px 25px rgba(0,0,0,.08);
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:20px;
+    }
+
+    .video-wrapper{
+      position:relative;
+      padding-bottom:56.25%;
+      height:0;
+      overflow:hidden;
+      border-radius:12px;
+    }
+    .video-wrapper iframe{
+      position:absolute;
+      top:0;left:0;
+      width:100%;height:100%;
+      border:0;
+    }
+
+    footer{
+      background:#111827;
+      color:#fff;
+      text-align:center;
+      padding:25px;
+      margin-top:40px;
+    }
+
+    .btn{
+      display:inline-block;
+      background:#22c55e;
+      color:#fff;
+      padding:12px 22px;
+      border-radius:999px;
+      text-decoration:none;
+      margin-top:15px;
+      font-weight:600;
+      transition:.25s;
+    }
+    .btn:hover{background:#16a34a}
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Cariri Paraibano</h1>
+  <p>Belezas naturais, cultura e história do coração do semiárido</p>
+  <a class="btn" href="#sobre">Explorar</a>
+</header>
+
+<nav>
+  <a href="#sobre">Sobre</a>
+  <a href="#atracoes">Atrações</a>
+  <a href="#videos">Vídeos</a>
+</nav>
+
+<section id="sobre" class="container">
+  <div class="card">
+    <h2>🌵 Sobre o Cariri Paraibano</h2>
+    <p>
+      O Cariri Paraibano é uma das regiões mais marcantes do estado da Paraíba, conhecido
+      por sua paisagem de caatinga, clima semiárido e forte identidade cultural.
+      A região abriga formações rochosas impressionantes, sítios arqueológicos,
+      festas tradicionais e um povo acolhedor.
+    </p>
+  </div>
+</section>
+
+<section id="atracoes" class="container">
+  <h2 style="margin-bottom:20px">📍 Principais Atrações</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Lajedo de Pai Mateus</h3>
+      <p>Um dos pontos turísticos mais famosos da Paraíba, com enormes blocos de granito espalhados pela paisagem.</p>
+    </div>
+    <div class="card">
+      <h3>Vale dos Dinossauros</h3>
+      <p>Região conhecida por pegadas fossilizadas que atraem pesquisadores e turistas.</p>
+    </div>
+    <div class="card">
+      <h3>Cultura do Bode</h3>
+      <p>A caprinocultura é forte no Cariri, influenciando a culinária e a economia local.</p>
+    </div>
+  </div>
+</section>
+
+<section id="videos" class="container">
+  <h2 style="margin-bottom:20px">🎥 Conheça em Vídeo</h2>
+  <div class="grid">
+    <div class="card">
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/3xq4V6YpZkY" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="card">
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/0R9s8Q7s3f0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 • Projeto sobre o Cariri Paraibano</p>
+</footer>
+
+</body>
+</html>
