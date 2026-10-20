@@ -1,0 +1,249 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conheça o Cariri Paraibano</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f0df;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #784421;
+      color: white;
+      text-align: center;
+      padding: 35px 15px;
+    }
+
+    header h1 {
+      font-size: 2.3rem;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      background: #376641;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 10px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ffdf80;
+    }
+
+    .banner {
+      background: linear-gradient(135deg, #c98b43, #e6cb88);
+      padding: 65px 20px;
+      text-align: center;
+      color: #382715;
+    }
+
+    .banner h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 25px;
+    }
+
+    section {
+      background: white;
+      padding: 25px;
+      margin: 25px 0;
+      border-radius: 12px;
+      box-shadow: 0 3px 8px #00000015;
+    }
+
+    section h2 {
+      color: #376641;
+      margin-bottom: 12px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: #edf3e8;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    button {
+      background: #376641;
+      color: white;
+      border: none;
+      padding: 12px 18px;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 12px;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background: #24452c;
+    }
+
+    #resultado {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #784421;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.7rem;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 5px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Cariri Paraibano</h1>
+    <p>Natureza, cultura e desafios do semiárido nordestino</p>
+  </header>
+
+  <nav>
+    <a href="#regiao">A região</a>
+    <a href="#clima">Clima e vegetação</a>
+    <a href="#economia">Economia</a>
+    <a href="#ambiente">Meio ambiente</a>
+    <a href="#quiz">Quiz</a>
+  </nav>
+
+  <div class="banner">
+    <h2>Descubra as riquezas do Cariri!</h2>
+    <p>Conheça as paisagens, a população e a importância
+    ambiental e cultural dessa região da Paraíba.</p>
+  </div>
+
+  <main>
+
+    <section id="regiao">
+      <h2>📍 Conhecendo a região</h2>
+      <p>
+        O Cariri Paraibano está localizado no interior da Paraíba
+        e integra o semiárido nordestino. A região apresenta
+        paisagens singulares, municípios com forte identidade
+        cultural e uma população que desenvolveu estratégias
+        para conviver com a irregularidade das chuvas.
+      </p>
+    </section>
+
+    <section id="clima">
+      <h2>☀️ Clima e vegetação</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Clima semiárido</h3>
+          <p>Chuvas irregulares, altas temperaturas e períodos
+          prolongados de estiagem caracterizam a região.</p>
+        </div>
+
+        <div class="card">
+          <h3>Caatinga</h3>
+          <p>Vegetação adaptada à falta de água, com plantas
+          como mandacaru, xique-xique e catingueira.</p>
+        </div>
+
+        <div class="card">
+          <h3>Recursos hídricos</h3>
+          <p>Açudes, cisternas e outras formas de armazenamento
+          de água são importantes para as comunidades.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="economia">
+      <h2>🌵 Economia e cultura</h2>
+      <p>
+        A economia regional inclui a criação de animais,
+        a agricultura adaptada às condições locais,
+        o artesanato, o comércio e o turismo.
+        Os conhecimentos tradicionais ajudam as comunidades
+        a enfrentar os desafios do semiárido.
+      </p>
+    </section>
+
+    <section id="ambiente">
+      <h2>🌎 Desafios ambientais</h2>
+      <p>
+        O desmatamento, o sobrepastoreio e o uso inadequado
+        do solo podem favorecer a erosão e a degradação
+        da terra. A conservação da Caatinga, o manejo
+        sustentável e o uso responsável da água são
+        fundamentais para a região.
+      </p>
+    </section>
+
+    <section id="quiz">
+      <h2>🎯 Teste seus conhecimentos</h2>
+      <p>Qual bioma predomina no Cariri Paraibano?</p>
+
+      <button onclick="responder('Amazônia')">Amazônia</button>
+      <button onclick="responder('Caatinga')">Caatinga</button>
+      <button onclick="responder('Pampa')">Pampa</button>
+
+      <p id="resultado" aria-live="polite"></p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Projeto educativo de Geografia | Cariri Paraibano</p>
+    <p>Conhecer a região é o primeiro passo para preservá-la!</p>
+  </footer>
+
+  <script>
+    function responder(opcao) {
+      const resultado = document.getElementById("resultado");
+
+      if (opcao === "Caatinga") {
+        resultado.textContent =
+          "Parabéns! Você acertou: a Caatinga é o bioma predominante.";
+        resultado.style.color = "green";
+      } else {
+        resultado.textContent =
+          "Tente novamente! Pense na vegetação do semiárido.";
+        resultado.style.color = "darkred";
+      }
+    }
+  </script>
+
+</body>
+</html>
